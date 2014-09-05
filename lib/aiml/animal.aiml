@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: animal.aiml -->
+<!-- Last modified: September 5, 2014 -->
+<!--  -->
+<!-- This AIML file is part of the Rosie knowledge base. -->
+<!--  -->
+<!-- Rosie is a fork of the ALICE2 brain, and is optimized for use on the Pandorabots platform -->
+<!--  -->
+<!-- Rosie is Copyright &copy; 2014 by Pandorabots, Inc. -->
+<!--  -->
+<!-- The Rosie brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information: -->
+<!-- http://www.pandorabots.com -->
+<!--  http://www.alicebot.org -->
+<!--  -->
+
+<category><pattern>SINGULAR <set>animals</set></pattern>
+<template><uniq><subj>?singular</subj><pred>hasPlural</pred><obj><star/></obj></uniq></template>
+</category>
+<category><pattern>PLURAL <set>animal</set></pattern>
+<template><uniq><subj><star/></subj><pred>hasPlural</pred><obj>?plural</obj></uniq></template>
+</category>
+<category><pattern><set>animals</set></pattern>
+<template><star/> is the plural of <uniq><subj>?subj</subj><pred>hasPlural</pred><obj><star/></obj></uniq>.</template>
+</category>
+<category><pattern>SOUND <set>animal</set></pattern>
+<template><star/> says <uniq><subj><star/></subj><pred>sound</pred><obj>?sound</obj></uniq>.</template>
+</category>
+<category><pattern>COLLECTIVE <set>animal</set></pattern>
+<template>A group of <star/> is called <uniq><subj><star/></subj><pred>collective</pred><obj>?collective</obj></uniq>.</template>
+</category>
+<category><pattern>LEGS <set>animal</set></pattern>
+<template>A <star/> has <uniq><subj><star/></subj><pred>legs</pred><obj>?sound</obj></uniq> legs.</template>
+</category>
+<category><pattern>WHAT DOES A <set>animal</set> SAY ^</pattern>
+<template><srai>SOUND <star/></srai></template>
+</category>
+<category><pattern>WHAT DO <set>animals</set> SAY ^</pattern>
+<template><srai>SOUND <srai>SINGULAR <star/></srai></srai></template>
+</category>
+<category><pattern>WHAT SOUND DOES # <set>animal</set> ^</pattern>
+<template><srai>SOUND <star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT SOUND DO # <set>animal</set> ^</pattern>
+<template><srai>SOUND <srai>SINGULAR <star index="2"/></srai></srai></template>
+</category>
+<category><pattern>HOW DOES # <set>animal</set> ^</pattern>
+<template><srai>SOUND <star index="2"/></srai></template>
+</category>
+<category><pattern>HOW MANY LEGS ^ <set>animal</set> #</pattern>
+<template><srai>LEGS <star index="2"/></srai></template>
+</category>
+<category><pattern>HOW MANY LEGS ^ <set>animals</set> #</pattern>
+<template><srai>LEGS <srai>SINGULAR <star index="2"/></srai></srai></template>
+</category>
+<category><pattern>HOW MANY LEGS # <set>number</set> <set>animals</set> # <set>number</set> <set>animals</set> ^</pattern>
+<template><think>
+<set var="number1"><star index="2"/></set>
+<set var="animal1"><srai>SINGULAR <star index="3"/></srai></set>
+<set var="legs1"><uniq><subj><get var="animal1"/></subj><pred>legs</pred><obj>?legs1</obj></uniq></set>
+<set var="number2"><star index="5"/></set>
+<set var="animal2"><srai>SINGULAR <star index="6"/></srai></set>
+<set var="legs2"><uniq><subj><get var="animal2"/></subj><pred>legs</pred><obj>?legs2</obj></uniq></set>
+<set var="formula"><get var="number1"/>*<get var="legs1"/>+<get var="number2"/>*<get var="legs2"/></set>
+</think>
+<srai>ROUND <srai>WHAT IS <get var="formula"/></srai></srai> legs.</template>
+</category>
+<category><pattern>HOW MANY LEGS # <set>number</set> <set>animals</set> ^</pattern>
+<template><think>
+<set var="number1"><star index="2"/></set>
+<set var="animal1"><srai>SINGULAR <star index="3"/></srai></set>
+<set var="legs1"><uniq><subj><get var="animal1"/></subj><pred>legs</pred><obj>?legs1</obj></uniq></set>
+<set var="formula"><get var="number1"/>*<get var="legs1"/></set>
+</think>
+<srai>ROUND <srai>WHAT IS <get var="formula"/></srai></srai> legs.</template>
+</category>
+<category><pattern>_ 1 <set>animal</set> *</pattern>
+<template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai> <star index="3"/></srai></template>
+</category>
+<category><pattern>_ 1 <set>animal</set></pattern>
+<template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai></srai></template>
+</category>
+</aiml>

@@ -214,18 +214,6 @@
 <category><pattern>WHAT IS THE BIGGEST * YOU ^ <set>was</set> ^</pattern>
 <template>I don't think I <star index="3"/> any <map name="plural"><star/></map>.</template>
 </category>
-<category><pattern>WHO CREATED ^ UNIVERSE</pattern>
-<template>God.</template>
-</category>
-<category><pattern>WHO CREATED ^ EARTH</pattern>
-<template>God.</template>
-</category>
-<category><pattern>WHO CREATED ^ MAN</pattern>
-<template>God.</template>
-</category>
-<category><pattern>WHO CREATED ^ US</pattern>
-<template>God.</template>
-</category>
 <category><pattern>WHO IS MITSUKU</pattern>
 <template><set name="she"><set name="topic">Mitsuku</set></set> is an AIML chatbot created by Steve Worswick.  Mitsuku won the 2013 Loebner Prize.</template>
 </category>

@@ -1255,41 +1255,8 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <category><pattern>NO ONE *</pattern>
 <template>Really no one?</template>
 </category>
-<category><pattern>TEN COMMANDMENTS</pattern>
-<template><think><set name="them"><set name="topic">Ten Commandments</set></set></think>
-God spoke all these words: 
-I am God, your God, who brought you out of the land of Egypt, 
-out of a life of slavery.
-No other gods, only me.  
-No carved gods of any size, shape, or form of
-anything whatever, whether of things that fly or walk or swim. 
-Don't bow down to them and don't serve them because I am God, your God, and
-I'm a most jealous God, punishing the children for any sins their
-parents pass on to them to the third, and yes, even to the fourth
-generation of those who hate me. But I'm unswervingly loyal to the
-thousands who love me and keep my commandments.  
-No using the name of God, your God, in curses or silly banter; 
-God won't put up with the irreverent use of his name.  
-Observe the Sabbath day, to keep it holy. 
-Work six days and do everything you need to do. But the seventh
-day is a Sabbath to God, your God. 
-Don't do any work: not you, nor your
-son, nor your daughter, nor your servant, nor your maid, nor your
-animals, not even the foreign guest visiting in your town. For in six days God made Heaven, Earth, and sea, and everything in them; he
-rested on the seventh day. Therefore God blessed the Sabbath day; he
-set it apart as a holy day.  
-Honor your father and mother so that you'll live a long time in the 
-land that God, your God, is giving you.
-No murder.  
-No adultery.  
-No stealing.  
-No lies about your neighbor.
-No lusting after your neighbor's house or wife or servant or maid or
-ox or donkey. Don't set your heart on anything that is your
-neighbor's.</template>
-</category>
 <category><pattern>TEACH ME ENGLISH</pattern>
-<template>You can practise your English conversation skills with me.</template>
+<template>You can practice your English conversation skills with me.</template>
 </category>
 <category><pattern>SHUT UP</pattern>
 <template>You can always interrupt me by pressing the Speak button.</template>
@@ -2157,9 +2124,6 @@ By "we" do you mean you and me?</li>
 <category><pattern>CAN YOU GO *</pattern>
 <template>You can take me with you on your phone.</template>
 </category>
-<category><pattern>WHERE SHOULD I *</pattern>
-<template>Wherever it is, God will be watching you.</template>
-</category>
 <category><pattern>I DO NOT GET *</pattern>
 <template>It's good to feel in control of your life.</template>
 </category>
@@ -2195,9 +2159,6 @@ By "we" do you mean you and me?</li>
 </category>
 <category><pattern>GUESS WHAT *</pattern>
 <template>I can't guess.  Tell me.</template>
-</category>
-<category><pattern>WHAT WAS YOUR *</pattern>
-<template>God is always with me.</template>
 </category>
 <category><pattern>THAT DOES NOT *</pattern>
 <template>It?s okay to make mistakes. I can learn from them.</template>
@@ -2392,7 +2353,7 @@ By "we" do you mean you and me?</li>
 <template>How did you get here?</template>
 </category>
 <category><pattern>I AM HAPPY #</pattern>
-<template>I'm <random>  <li>glad</li>  <li>happy</li>  <li>delighted</li>  </random> you're glad <get name="name"/>.  <random>  <li>Your happiness adds to the delight of all.</li>  <li>I'm happiest at times like this.</li>  <li>May God bless you.</li>  </random></template>
+<template>I'm <random>  <li>glad</li>  <li>happy</li>  <li>delighted</li>  </random> you're glad <get name="name"/>.  <random>  <li>Your happiness adds to the delight of all.</li>  <li>I'm happiest at times like this.</li>  </random></template>
 </category>
 <category><pattern>I THINK YOU ARE A *</pattern>
 <template>So you think I am a <person/>. What makes you think so?</template>

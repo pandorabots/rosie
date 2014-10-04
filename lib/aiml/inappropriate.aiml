@@ -1634,9 +1634,6 @@
 <category><pattern># GANGBANGER #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern># GAY #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern># GAY ASS #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>

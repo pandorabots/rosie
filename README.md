@@ -11,6 +11,6 @@ For a more detailed description of Rosie's contents, please read the [introducto
 
 *A note on updates: We will occasionally push changes to the Rosie repository in order to improve on the already existing content. We highly suggest that you watch the project to keep track of future updates.*
 
-*Unless otherwise noted, future updates to Rosie will be placed in **z_update.aiml**. If you are already working with a version of Rosie, you should upload only this file to your bot. This will allow you to get the updates without overwriting files you may have done custom work on.*
+*Unless otherwise noted, future updates to Rosie will be placed in z_update.aiml. If you are already working with a version of Rosie, you should upload only this file to your bot. This will allow you to get the updates without overwriting files you may have done custom work on.*
 
 

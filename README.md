@@ -7,7 +7,7 @@ To try out Rosie, create an account and a new bot on the [Playground](https://pl
 
 To begin customizing Rosie, try changing some of the values found in rosie.properties.
 
-For a more detailed description of Rosie's contents, please read the [introductory blog post](http://blog.pandorabots.com/2014/09/rosie-brand-new-base-content.html) on the topic.
+For a more detailed description of Rosie's contents, please read the [introductory blog post](http://blog.pandorabots.com/rosie-customizable-base-content/) on the topic.
 
 *A note on updates: We will occasionally push changes to the Rosie repository in order to improve on the already existing content. We highly suggest that you watch the project to keep track of future updates.*
 

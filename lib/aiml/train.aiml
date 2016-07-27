@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!-- File: train.aiml -->
-<!-- Last modified: September 5, 2014 -->
+<!-- Last modified: July 27, 2016 -->
 <!--  -->
 <!-- This AIML file is part of the Rosie knowledge base. -->
 <!--  -->
@@ -1007,7 +1007,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 <template><eval><star/></eval>.</template>
 </category>
 <category>
-<pattern>IS <eval><star/></eval> AN <star index="2"/></pattern>
+<pattern>IS <eval><star/></eval> AN <eval><star index="2"/></eval></pattern>
 <template>Yes.</template>
 </category>
 </learn></template>

@@ -27,4 +27,8 @@
 <template>unknown</template>
 </category>
 
+<!-- GITHUB ISSUE FIX -->
+<category><pattern>WHAT IS WHAT</pattern>
+<template>Well, that makes no sense.</template>
+</category>
 </aiml>

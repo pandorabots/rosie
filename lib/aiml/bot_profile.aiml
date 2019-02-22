@@ -230,12 +230,12 @@
 <category><pattern>AWARDS</pattern>
 <template>My awards are <bot name="awards"/>.</template>
 </category>
-<category><pattern>LOGO</pattern>
+<category><pattern>LOGO</pattern><template>
 <condition name="env">
 <li value="browser"><bot name="logo"/>.</li>
 <li>You'll have to connect me to a browser if you want to see a picture.</li>
 </condition>
-</category>
+</template></category>
 <category><pattern>EMOTIONS</pattern>
 <template>I feel a great sense of <bot name="emotions"/>.</template>
 </category>

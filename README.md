@@ -3,7 +3,7 @@ Rosie (chatbot base)
 
 Rosie is a collection of AIML and AIML 2.0 files that form a solid base for any chatbot project. Rosie is a fork of the ALICE 2.0 project that has been optimized for use on the Pandorabots platform. 
 
-To try out Rosie, create an account and a new bot on the [Playground](https://playground.pandorabots.com), and upload the files found under the lib directory. 
+To try out Rosie, create an account and a new bot on [Pandorabots](https://www.pandorabots.com), and upload the files found under the lib directory, or select the "Small Talk" option for content.
 
 To begin customizing Rosie, try changing some of the values found in rosie.properties.
 
